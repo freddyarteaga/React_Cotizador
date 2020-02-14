@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled'
 import Header from './components/Header'
+import Formulario from './components/Formulario'
 
 const Contenedor = styled.div`
   max-width: 600px;
@@ -20,7 +21,7 @@ function App () {
         titulo='Cotizador de Seguros' 
       />
       <ContenedorFormulario>
-        
+        <Formulario />
       </ContenedorFormulario>
     </Contenedor>
     
