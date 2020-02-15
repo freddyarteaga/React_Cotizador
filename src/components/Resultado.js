@@ -33,7 +33,7 @@ const Resultado = ({cotizacion}) => {
         (cotizacion === 0) 
             ? <Mensaje>Elige marca, ano y tipo de seguro</Mensaje> 
             : 
-            <ResultadoCotizacion>
+            ( <ResultadoCotizacion>
                 <TransitionGroup
                     component='p'
                     className='resultado'
@@ -46,7 +46,7 @@ const Resultado = ({cotizacion}) => {
                         <TextoCotizacion>El total es: $ {cotizacion}</TextoCotizacion>
                     </CSSTransition>
                 </TransitionGroup>
-            </ResultadoCotizacion>
+            </ResultadoCotizacion> )
      );
 }
  
