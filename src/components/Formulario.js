@@ -52,7 +52,7 @@ const Boton = styled.button`
     }
 `
 
-const Formulario = () => {
+const Formulario = ({guardarResumen}) => {
 
     const [ datos, guardarDatos ] = useState({
         marca:'',
@@ -108,7 +108,10 @@ const Formulario = () => {
 
         console.log(resultado)
 
-        // Total
+        guardarResumen({
+            cotizacion: resultado,
+            datos
+        })
 
     }
 
