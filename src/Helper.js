@@ -7,13 +7,13 @@ export function calculaMarca(marca) {
     let incremento;
 
     switch(marca) {
-        case('europeo'):
+        case'europeo':
             incremento = 1.30
             break;
-        case('americano'):
+        case'americano':
             incremento = 1.15
             break;
-        case('asiatico'):
+        case'asiatico':
             incremento = 1.05
             break;
         default:
@@ -21,4 +21,9 @@ export function calculaMarca(marca) {
     }
 
     return incremento
+}
+
+// Calcular el tipo de seguro
+export function obtenerPlan( plan ) {
+    return ( plan === 'basico' ) ? 1.20 : 1.50
 }
